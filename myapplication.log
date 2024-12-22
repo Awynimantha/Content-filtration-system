@@ -1,0 +1,65 @@
+2024-12-22T19:24:11.844+05:30  INFO 131732 --- [scraper] [main] c.webscraper.scraper.ScraperApplication  : Starting ScraperApplication using Java 21.0.3 with PID 131732 (/media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/scraper/target/classes started by yasiru in /media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service)
+2024-12-22T19:24:11.846+05:30  INFO 131732 --- [scraper] [main] c.webscraper.scraper.ScraperApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-12-22T19:24:12.860+05:30  INFO 131732 --- [scraper] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9080 (http)
+2024-12-22T19:24:12.877+05:30  INFO 131732 --- [scraper] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-22T19:24:12.877+05:30  INFO 131732 --- [scraper] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-22T19:24:12.939+05:30  INFO 131732 --- [scraper] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-22T19:24:12.939+05:30  INFO 131732 --- [scraper] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1031 ms
+2024-12-22T19:24:13.018+05:30  WARN 131732 --- [scraper] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webScraper' defined in file [/media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/scraper/target/classes/com/webscraper/scraper/models/WebScraper.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.jsoup.nodes.Document' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-22T19:24:13.022+05:30  INFO 131732 --- [scraper] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-12-22T19:24:13.037+05:30  INFO 131732 --- [scraper] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-22T19:24:13.076+05:30 ERROR 131732 --- [scraper] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.webscraper.scraper.models.WebScraper required a bean of type 'org.jsoup.nodes.Document' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.jsoup.nodes.Document' in your configuration.
+
+2024-12-22T19:25:54.797+05:30 ERROR 132355 --- [scraper] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.webscraper.scraper.models.WebScraper required a bean of type 'org.jsoup.nodes.Document' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.jsoup.nodes.Document' in your configuration.
+
+2024-12-22T19:26:57.337+05:30 ERROR 132752 --- [scraper] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.webscraper.scraper.models.WebScraper required a bean of type 'java.lang.String' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'java.lang.String' in your configuration.
+
+2024-12-22T19:37:03.472+05:30 DEBUG 136262 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-22T19:37:03.527+05:30 DEBUG 136262 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-22T19:37:03.552+05:30 DEBUG 136262 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-22T19:37:03.587+05:30 DEBUG 136262 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-22T19:37:33.105+05:30 DEBUG 136489 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-22T19:37:33.159+05:30 DEBUG 136489 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-22T19:37:33.187+05:30 DEBUG 136489 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-22T19:37:33.220+05:30 DEBUG 136489 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
