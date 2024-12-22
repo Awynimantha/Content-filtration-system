@@ -8,10 +8,12 @@ import com.webscraper.scraper.models.WebScraper;
 import java.io.IOException;
 
 import org.jsoup.nodes.Document;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @RestController
 @RequestMapping(path = "/v1/scraper", produces="application/json")
+@CrossOrigin(origins = "http://localhost:8080")
 public class MainController {
     private WebScraper webScraper;
 
@@ -20,11 +22,11 @@ public class MainController {
     }
 
     @GetMapping("/scrape")
-    public void getScrapedData() throws IOException{
-        String url = "";
+    public String getScrapedData() throws IOException{
+        String url = webScraper.getUrl();
         webScraper.setUrl(url);
         Document document = webScraper.scrape(); 
-        System.out.println(document.body());
+        return document.body().text();
     }
     
 
