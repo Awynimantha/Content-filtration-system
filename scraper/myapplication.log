@@ -1,0 +1,13 @@
+2024-12-22T15:31:40.751+05:30  INFO 27331 --- [scraper] [main] c.webscraper.scraper.ScraperApplication  : Starting ScraperApplication using Java 21.0.3 with PID 27331 (/media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/miro-services/scraper/target/classes started by yasiru in /media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/miro-services/scraper)
+2024-12-22T15:31:40.754+05:30  INFO 27331 --- [scraper] [main] c.webscraper.scraper.ScraperApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-12-22T15:31:42.171+05:30  INFO 27331 --- [scraper] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9080 (http)
+2024-12-22T15:31:42.189+05:30  INFO 27331 --- [scraper] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-22T15:31:42.191+05:30  INFO 27331 --- [scraper] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-22T15:31:42.249+05:30  INFO 27331 --- [scraper] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-22T15:31:42.250+05:30  INFO 27331 --- [scraper] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1411 ms
+2024-12-22T15:31:42.503+05:30 DEBUG 27331 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-12-22T15:31:42.601+05:30 DEBUG 27331 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-22T15:31:42.634+05:30 DEBUG 27331 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-22T15:31:42.686+05:30 DEBUG 27331 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-22T15:31:42.765+05:30  INFO 27331 --- [scraper] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9080 (http) with context path '/'
+2024-12-22T15:31:42.775+05:30  INFO 27331 --- [scraper] [main] c.webscraper.scraper.ScraperApplication  : Started ScraperApplication in 2.905 seconds (process running for 3.308)
