@@ -1,0 +1,13 @@
+2024-12-23T16:24:19.964+05:30 DEBUG 30909 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-23T16:24:20.159+05:30 DEBUG 30909 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-23T16:24:20.250+05:30 DEBUG 30909 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-23T16:24:20.284+05:30 DEBUG 30909 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-23T16:24:20.387+05:30 DEBUG 30909 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-23T16:24:21.033+05:30  INFO 30909 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-23T16:24:21.036+05:30 DEBUG 30909 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-23T16:24:21.036+05:30 DEBUG 30909 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-23T16:24:21.037+05:30 DEBUG 30909 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-23T16:24:21.038+05:30 DEBUG 30909 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@67a3446f
+2024-12-23T16:24:21.045+05:30 DEBUG 30909 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2ec0eacf
+2024-12-23T16:24:21.046+05:30 DEBUG 30909 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-23T16:24:21.046+05:30  INFO 30909 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
