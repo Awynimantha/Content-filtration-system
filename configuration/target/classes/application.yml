@@ -1,0 +1,10 @@
+server:
+    port: 9081
+spring:
+    profiles:
+        active: native
+    cloud:
+        config:
+            server:
+                native:
+                    searchLocations: file:///media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/configuration/src/main/resources/config/scraper

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: scraper
+  server:
+    port: 9080
+
+logging:
+  level:
+    org:
+      springframework:
+        web: debug
+    org.hibernate: error
+  file:
+    name: logs/myapplication.log
+
+scraper:
+  url: https://www.bbc.com/news
