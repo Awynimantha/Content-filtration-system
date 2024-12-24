@@ -3,8 +3,10 @@ package com.webscraper.scraper.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.webscraper.scraper.models.Cache;
 import com.webscraper.scraper.models.WebScraper;
 
+import java.io.FileWriter;
 import java.io.IOException;
 
 import org.jsoup.nodes.Document;
@@ -24,11 +26,11 @@ public class MainController {
     @GetMapping("/scrape")
     public String getScrapedData() throws IOException{
         String url = webScraper.getUrl();
+        System.out.println(url);
         webScraper.setUrl(url);
-        Document document = webScraper.scrape(); 
-        return document.body().text();
+        String document = webScraper.scrape(); 
+        return document;
     }
-    
 
     
 }
