@@ -20,6 +20,12 @@ public class HTMLScraper {
     public String cardDiv;
     @Value("${HTMLScraper.cardContentDiv}")
     public String cardContentDiv;
+    @Value("${HTMLScraper.cardLink_internal}")
+    public String cardInternalLink;
+    @Value("${HTMLScraper.cardLink_external}")
+    public String cardExternalLink;
+    @Value("${HTMLScraper.mainContent}")
+    public String mainContent;
     public List<NewsContent> newsContents; 
 
     public HTMLScraper() {
@@ -27,15 +33,25 @@ public class HTMLScraper {
     }
 
     public List<NewsContent> scrape(Document document) {
-        Elements elements = document.select(this.newsContainer);
+        Elements mainContentEl = document.select(this.mainContent);
+        Elements elements = mainContentEl.select(this.newsContainer);
         List<Elements> cards = new ArrayList<>();
+        String url = "";
         for(Element element: elements){
+            Elements urlElement = element.select(this.cardInternalLink);
+            if(urlElement == null) {
+                urlElement = element.select(this.cardExternalLink);
+            }
+            if(urlElement.first() != null) {
+                url = urlElement.first().text();
+            }
             Elements innerCards = element.select(this.cardDiv);
             for(Element card: innerCards) {
                 Elements contents = card.select(this.cardContentDiv);
                 for(Element content: contents) {
                     NewsContent newsContent = new NewsContent();
                     newsContent.setStrContent(content.text());
+                    newsContent.setUrl(url);
                     newsContents.add(newsContent);
                 }
             }

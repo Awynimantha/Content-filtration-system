@@ -922,3 +922,585 @@ java.lang.NullPointerException: Cannot invoke "String.isEmpty()" because "this.u
 2024-12-25T13:09:29.060+05:30 DEBUG 42962 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
 2024-12-25T13:09:29.062+05:30 DEBUG 42962 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, Content: P (truncated)..."]
 2024-12-25T13:09:29.068+05:30 DEBUG 42962 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-25T14:09:09.612+05:30 DEBUG 60865 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-25T14:09:09.904+05:30 DEBUG 60865 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-25T14:09:10.041+05:30 DEBUG 60865 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-25T14:09:10.088+05:30 DEBUG 60865 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-25T14:09:10.152+05:30 DEBUG 60865 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-25T14:09:12.185+05:30  INFO 60865 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-25T14:09:12.185+05:30 DEBUG 60865 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-25T14:09:12.185+05:30 DEBUG 60865 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-25T14:09:12.185+05:30 DEBUG 60865 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-25T14:09:12.186+05:30 DEBUG 60865 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2b774d9e
+2024-12-25T14:09:12.187+05:30 DEBUG 60865 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3c261276
+2024-12-25T14:09:12.187+05:30 DEBUG 60865 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-25T14:09:12.187+05:30  INFO 60865 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-25T14:09:12.205+05:30 DEBUG 60865 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
+2024-12-25T14:09:12.211+05:30 DEBUG 60865 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
+2024-12-25T14:09:12.341+05:30 DEBUG 60865 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null
+2024-12-25T14:09:12.347+05:30 ERROR 60865 --- [scraper] [http-nio-9080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null
+	at com.webscraper.scraper.models.HTMLScraper.scrape(HTMLScraper.java:41)
+	at com.webscraper.scraper.models.WebScraper.getArticleHeadings(WebScraper.java:46)
+	at com.webscraper.scraper.controller.MainController.getScrapedData(MainController.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2024-12-25T14:09:12.353+05:30 DEBUG 60865 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-12-25T14:09:12.354+05:30 DEBUG 60865 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-25T14:09:12.373+05:30 DEBUG 60865 --- [scraper] [http-nio-9080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-25T14:09:12.375+05:30 DEBUG 60865 --- [scraper] [http-nio-9080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Dec 25 14:09:12 IST 2024, status=500, error=Internal Server Error, path=/v1/scraper/s (truncated)...]
+2024-12-25T14:09:12.409+05:30 DEBUG 60865 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-12-25T14:09:56.536+05:30 DEBUG 61324 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-25T14:09:56.799+05:30 DEBUG 61324 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-25T14:09:56.927+05:30 DEBUG 61324 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-25T14:09:56.980+05:30 DEBUG 61324 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-25T14:09:57.070+05:30 DEBUG 61324 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-25T14:09:58.319+05:30  INFO 61324 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-25T14:09:58.319+05:30 DEBUG 61324 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-25T14:09:58.319+05:30 DEBUG 61324 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-25T14:09:58.319+05:30 DEBUG 61324 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-25T14:09:58.320+05:30 DEBUG 61324 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7b482c50
+2024-12-25T14:09:58.320+05:30 DEBUG 61324 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@51fd10c6
+2024-12-25T14:09:58.321+05:30 DEBUG 61324 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-25T14:09:58.321+05:30  INFO 61324 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-25T14:09:58.339+05:30 DEBUG 61324 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
+2024-12-25T14:09:58.346+05:30 DEBUG 61324 --- [scraper] [http-nio-9080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
+2024-12-25T14:09:58.497+05:30 DEBUG 61324 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null
+2024-12-25T14:09:58.503+05:30 ERROR 61324 --- [scraper] [http-nio-9080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null
+	at com.webscraper.scraper.models.HTMLScraper.scrape(HTMLScraper.java:41)
+	at com.webscraper.scraper.models.WebScraper.getArticleHeadings(WebScraper.java:46)
+	at com.webscraper.scraper.controller.MainController.getScrapedData(MainController.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2024-12-25T14:09:58.510+05:30 DEBUG 61324 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-12-25T14:09:58.511+05:30 DEBUG 61324 --- [scraper] [http-nio-9080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-25T14:09:58.532+05:30 DEBUG 61324 --- [scraper] [http-nio-9080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-25T14:09:58.534+05:30 DEBUG 61324 --- [scraper] [http-nio-9080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Dec 25 14:09:58 IST 2024, status=500, error=Internal Server Error, path=/v1/scraper/s (truncated)...]
+2024-12-25T14:09:58.572+05:30 DEBUG 61324 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-12-25T14:10:49.594+05:30 DEBUG 64363 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-25T14:10:49.782+05:30 DEBUG 64363 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-25T14:10:49.879+05:30 DEBUG 64363 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-25T14:10:49.907+05:30 DEBUG 64363 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-25T14:10:49.955+05:30 DEBUG 64363 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-25T14:10:53.064+05:30  INFO 64363 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-25T14:10:53.065+05:30 DEBUG 64363 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-25T14:10:53.065+05:30 DEBUG 64363 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-25T14:10:53.066+05:30 DEBUG 64363 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-25T14:10:53.067+05:30 DEBUG 64363 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@660edcb1
+2024-12-25T14:10:53.068+05:30 DEBUG 64363 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@28507977
+2024-12-25T14:10:53.068+05:30 DEBUG 64363 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-25T14:10:53.069+05:30  INFO 64363 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-12-25T14:10:58.650+05:30 DEBUG 64670 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-25T14:10:58.892+05:30 DEBUG 64670 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-25T14:10:58.984+05:30 DEBUG 64670 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-25T14:10:59.017+05:30 DEBUG 64670 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-25T14:10:59.087+05:30 DEBUG 64670 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-25T14:11:01.142+05:30  INFO 64670 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-25T14:11:01.142+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-25T14:11:01.142+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-25T14:11:01.143+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-25T14:11:01.144+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3cb8d316
+2024-12-25T14:11:01.145+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2e95e618
+2024-12-25T14:11:01.146+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-25T14:11:01.147+05:30  INFO 64670 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-12-25T14:11:01.181+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
+2024-12-25T14:11:01.188+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
+2024-12-25T14:11:07.191+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null
+2024-12-25T14:11:07.201+05:30 ERROR 64670 --- [scraper] [http-nio-9080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null
+	at com.webscraper.scraper.models.HTMLScraper.scrape(HTMLScraper.java:41)
+	at com.webscraper.scraper.models.WebScraper.getArticleHeadings(WebScraper.java:46)
+	at com.webscraper.scraper.controller.MainController.getScrapedData(MainController.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2024-12-25T14:11:07.209+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-12-25T14:11:07.211+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-25T14:11:07.239+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-25T14:11:07.243+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Dec 25 14:11:07 IST 2024, status=500, error=Internal Server Error, path=/v1/scraper/s (truncated)...]
+2024-12-25T14:11:07.279+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-12-25T14:11:12.614+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
+2024-12-25T14:11:12.615+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
+2024-12-25T14:11:12.665+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-4] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null
+2024-12-25T14:11:12.666+05:30 ERROR 64670 --- [scraper] [http-nio-9080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null
+	at com.webscraper.scraper.models.HTMLScraper.scrape(HTMLScraper.java:41)
+	at com.webscraper.scraper.models.WebScraper.getArticleHeadings(WebScraper.java:46)
+	at com.webscraper.scraper.controller.MainController.getScrapedData(MainController.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2024-12-25T14:11:12.667+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-12-25T14:11:12.667+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-25T14:11:12.668+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-25T14:11:12.669+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Dec 25 14:11:12 IST 2024, status=500, error=Internal Server Error, path=/v1/scraper/s (truncated)...]
+2024-12-25T14:11:12.670+05:30 DEBUG 64670 --- [scraper] [http-nio-9080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-12-25T14:11:22.057+05:30 DEBUG 65212 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-25T14:11:22.261+05:30 DEBUG 65212 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-25T14:11:22.389+05:30 DEBUG 65212 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-25T14:11:22.428+05:30 DEBUG 65212 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-25T14:11:22.485+05:30 DEBUG 65212 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-25T14:11:23.835+05:30  INFO 65212 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-25T14:11:23.835+05:30 DEBUG 65212 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-25T14:11:23.835+05:30 DEBUG 65212 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-25T14:11:23.836+05:30 DEBUG 65212 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-25T14:11:23.839+05:30 DEBUG 65212 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@52eb0783
+2024-12-25T14:11:23.840+05:30 DEBUG 65212 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3b34c951
+2024-12-25T14:11:23.840+05:30 DEBUG 65212 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-25T14:11:23.840+05:30  INFO 65212 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-12-25T14:11:23.869+05:30 DEBUG 65212 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
+2024-12-25T14:11:23.882+05:30 DEBUG 65212 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
+2024-12-25T14:11:24.063+05:30 DEBUG 65212 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null
+2024-12-25T14:11:24.067+05:30 ERROR 65212 --- [scraper] [http-nio-9080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null
+	at com.webscraper.scraper.models.HTMLScraper.scrape(HTMLScraper.java:41)
+	at com.webscraper.scraper.models.WebScraper.getArticleHeadings(WebScraper.java:46)
+	at com.webscraper.scraper.controller.MainController.getScrapedData(MainController.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2024-12-25T14:11:24.083+05:30 DEBUG 65212 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-12-25T14:11:24.085+05:30 DEBUG 65212 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-25T14:11:24.122+05:30 DEBUG 65212 --- [scraper] [http-nio-9080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-25T14:11:24.127+05:30 DEBUG 65212 --- [scraper] [http-nio-9080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Dec 25 14:11:24 IST 2024, status=500, error=Internal Server Error, path=/v1/scraper/s (truncated)...]
+2024-12-25T14:11:24.221+05:30 DEBUG 65212 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-12-25T14:11:39.696+05:30 DEBUG 65428 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-25T14:11:39.949+05:30 DEBUG 65428 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-25T14:11:40.066+05:30 DEBUG 65428 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-25T14:11:40.105+05:30 DEBUG 65428 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-25T14:11:40.180+05:30 DEBUG 65428 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-25T14:11:42.365+05:30  INFO 65428 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-25T14:11:42.365+05:30 DEBUG 65428 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-25T14:11:42.365+05:30 DEBUG 65428 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-25T14:11:42.365+05:30 DEBUG 65428 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-25T14:11:42.366+05:30 DEBUG 65428 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@79d9122d
+2024-12-25T14:11:42.367+05:30 DEBUG 65428 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5d105c3b
+2024-12-25T14:11:42.367+05:30 DEBUG 65428 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-25T14:11:42.367+05:30  INFO 65428 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-25T14:11:42.394+05:30 DEBUG 65428 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
+2024-12-25T14:11:42.399+05:30 DEBUG 65428 --- [scraper] [http-nio-9080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
+2024-12-25T14:17:18.657+05:30 DEBUG 67534 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-25T14:17:18.836+05:30 DEBUG 67534 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-25T14:17:18.909+05:30 DEBUG 67534 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-25T14:17:18.939+05:30 DEBUG 67534 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-25T14:17:19.012+05:30 DEBUG 67534 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-25T14:17:21.544+05:30  INFO 67534 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-25T14:17:21.544+05:30 DEBUG 67534 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-25T14:17:21.544+05:30 DEBUG 67534 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-25T14:17:21.544+05:30 DEBUG 67534 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-25T14:17:21.545+05:30 DEBUG 67534 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@649211fd
+2024-12-25T14:17:21.545+05:30 DEBUG 67534 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@723b6a9f
+2024-12-25T14:17:21.546+05:30 DEBUG 67534 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-25T14:17:21.546+05:30  INFO 67534 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-25T14:17:21.559+05:30 DEBUG 67534 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
+2024-12-25T14:17:21.564+05:30 DEBUG 67534 --- [scraper] [http-nio-9080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
+2024-12-25T14:17:21.702+05:30 DEBUG 67534 --- [scraper] [http-nio-9080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-12-25T14:17:21.703+05:30 DEBUG 67534 --- [scraper] [http-nio-9080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, link: /med (truncated)..."]
+2024-12-25T14:17:21.709+05:30 DEBUG 67534 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-25T14:23:48.423+05:30 DEBUG 69887 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-25T14:23:48.673+05:30 DEBUG 69887 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-25T14:23:48.750+05:30 DEBUG 69887 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-25T14:23:48.773+05:30 DEBUG 69887 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-25T14:23:48.821+05:30 DEBUG 69887 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-25T14:23:51.337+05:30  INFO 69887 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-25T14:23:51.337+05:30 DEBUG 69887 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-25T14:23:51.337+05:30 DEBUG 69887 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-25T14:23:51.337+05:30 DEBUG 69887 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-25T14:23:51.338+05:30 DEBUG 69887 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@49c5ad5f
+2024-12-25T14:23:51.338+05:30 DEBUG 69887 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@603d1465
+2024-12-25T14:23:51.339+05:30 DEBUG 69887 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-25T14:23:51.339+05:30  INFO 69887 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-25T14:23:51.355+05:30 DEBUG 69887 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
+2024-12-25T14:23:51.361+05:30 DEBUG 69887 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
+2024-12-25T14:23:51.522+05:30 DEBUG 69887 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null
+2024-12-25T14:23:51.524+05:30 ERROR 69887 --- [scraper] [http-nio-9080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Element.text()" because the return value of "org.jsoup.select.Elements.first()" is null
+	at com.webscraper.scraper.models.HTMLScraper.scrape(HTMLScraper.java:44)
+	at com.webscraper.scraper.models.WebScraper.getArticleHeadings(WebScraper.java:46)
+	at com.webscraper.scraper.controller.MainController.getScrapedData(MainController.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2024-12-25T14:23:51.530+05:30 DEBUG 69887 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-12-25T14:23:51.532+05:30 DEBUG 69887 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-12-25T14:23:51.550+05:30 DEBUG 69887 --- [scraper] [http-nio-9080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-12-25T14:23:51.552+05:30 DEBUG 69887 --- [scraper] [http-nio-9080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Dec 25 14:23:51 IST 2024, status=500, error=Internal Server Error, path=/v1/scraper/s (truncated)...]
+2024-12-25T14:23:51.585+05:30 DEBUG 69887 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-12-25T14:24:51.479+05:30 DEBUG 70378 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-25T14:24:51.676+05:30 DEBUG 70378 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-25T14:24:51.747+05:30 DEBUG 70378 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-25T14:24:51.794+05:30 DEBUG 70378 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-25T14:24:51.864+05:30 DEBUG 70378 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-25T14:24:53.252+05:30  INFO 70378 --- [scraper] [http-nio-9080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-25T14:24:53.252+05:30 DEBUG 70378 --- [scraper] [http-nio-9080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-25T14:24:53.253+05:30 DEBUG 70378 --- [scraper] [http-nio-9080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-25T14:24:53.253+05:30 DEBUG 70378 --- [scraper] [http-nio-9080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-25T14:24:53.254+05:30 DEBUG 70378 --- [scraper] [http-nio-9080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@62124b70
+2024-12-25T14:24:53.254+05:30 DEBUG 70378 --- [scraper] [http-nio-9080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7834e9cb
+2024-12-25T14:24:53.254+05:30 DEBUG 70378 --- [scraper] [http-nio-9080-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-25T14:24:53.254+05:30  INFO 70378 --- [scraper] [http-nio-9080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-25T14:24:53.275+05:30 DEBUG 70378 --- [scraper] [http-nio-9080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
+2024-12-25T14:24:53.280+05:30 DEBUG 70378 --- [scraper] [http-nio-9080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
+2024-12-25T14:24:53.431+05:30 DEBUG 70378 --- [scraper] [http-nio-9080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-12-25T14:24:53.432+05:30 DEBUG 70378 --- [scraper] [http-nio-9080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, Content: P (truncated)..."]
+2024-12-25T14:24:53.442+05:30 DEBUG 70378 --- [scraper] [http-nio-9080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-25T14:26:00.752+05:30 DEBUG 70911 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-25T14:26:00.953+05:30 DEBUG 70911 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-25T14:26:01.022+05:30 DEBUG 70911 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-25T14:26:01.055+05:30 DEBUG 70911 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-25T14:26:01.107+05:30 DEBUG 70911 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-25T14:26:02.622+05:30  INFO 70911 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-25T14:26:02.622+05:30 DEBUG 70911 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-25T14:26:02.622+05:30 DEBUG 70911 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-25T14:26:02.622+05:30 DEBUG 70911 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-25T14:26:02.623+05:30 DEBUG 70911 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@28e45977
+2024-12-25T14:26:02.623+05:30 DEBUG 70911 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@32a401af
+2024-12-25T14:26:02.624+05:30 DEBUG 70911 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-25T14:26:02.624+05:30  INFO 70911 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-25T14:26:02.645+05:30 DEBUG 70911 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
+2024-12-25T14:26:02.652+05:30 DEBUG 70911 --- [scraper] [http-nio-9080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
+2024-12-25T14:26:02.826+05:30 DEBUG 70911 --- [scraper] [http-nio-9080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-12-25T14:26:02.829+05:30 DEBUG 70911 --- [scraper] [http-nio-9080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, link: , Co (truncated)..."]
+2024-12-25T14:26:02.835+05:30 DEBUG 70911 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-25T14:27:54.183+05:30 DEBUG 71653 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-25T14:27:54.408+05:30 DEBUG 71653 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-25T14:27:54.498+05:30 DEBUG 71653 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-25T14:27:54.534+05:30 DEBUG 71653 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-25T14:27:54.610+05:30 DEBUG 71653 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-25T14:27:55.426+05:30  INFO 71653 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-25T14:27:55.426+05:30 DEBUG 71653 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-25T14:27:55.426+05:30 DEBUG 71653 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-25T14:27:55.426+05:30 DEBUG 71653 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-25T14:27:55.427+05:30 DEBUG 71653 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2f4501cb
+2024-12-25T14:27:55.428+05:30 DEBUG 71653 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3243bfb6
+2024-12-25T14:27:55.428+05:30 DEBUG 71653 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-25T14:27:55.429+05:30  INFO 71653 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-25T14:27:55.462+05:30 DEBUG 71653 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
+2024-12-25T14:27:55.473+05:30 DEBUG 71653 --- [scraper] [http-nio-9080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
+2024-12-25T14:30:38.066+05:30 DEBUG 72724 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-25T14:30:38.325+05:30 DEBUG 72724 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-25T14:30:38.422+05:30 DEBUG 72724 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-25T14:30:38.457+05:30 DEBUG 72724 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-25T14:30:38.512+05:30 DEBUG 72724 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-25T14:30:40.866+05:30  INFO 72724 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-25T14:30:40.867+05:30 DEBUG 72724 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-25T14:30:40.867+05:30 DEBUG 72724 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-25T14:30:40.867+05:30 DEBUG 72724 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-25T14:30:40.868+05:30 DEBUG 72724 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7e881bd5
+2024-12-25T14:30:40.868+05:30 DEBUG 72724 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@52d5841e
+2024-12-25T14:30:40.869+05:30 DEBUG 72724 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-25T14:30:40.869+05:30  INFO 72724 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-25T14:30:40.889+05:30 DEBUG 72724 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
+2024-12-25T14:30:40.897+05:30 DEBUG 72724 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
+2024-12-25T14:30:41.074+05:30 DEBUG 72724 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-12-25T14:30:41.076+05:30 DEBUG 72724 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, link: , Co (truncated)..."]
+2024-12-25T14:30:41.084+05:30 DEBUG 72724 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
