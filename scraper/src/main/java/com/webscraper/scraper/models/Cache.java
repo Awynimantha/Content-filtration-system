@@ -1,5 +1,6 @@
 package com.webscraper.scraper.models;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -7,6 +8,8 @@ import java.io.IOException;
 import java.time.LocalTime;
 import java.time.temporal.ChronoUnit;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cglib.core.Local;
 import org.springframework.stereotype.Component;
@@ -40,15 +43,9 @@ public class Cache {
         return false;
     }
 
-    public String getCacheData() throws IOException {
-        FileReader fileReader = new FileReader(location);
-        int i = fileReader.read(); 
-        StringBuilder stringBuilder = new StringBuilder();
-        while(i != -1) {
-            stringBuilder.append((char)i);
-            i = fileReader.read();
-        }
-        fileReader.close();
-        return stringBuilder.toString();
+    public Document getCacheData() throws IOException {
+        File file = new File(location);
+        Document document = Jsoup.parse(file);
+        return document;
     }
 }

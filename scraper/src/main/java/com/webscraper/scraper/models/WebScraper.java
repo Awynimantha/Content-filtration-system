@@ -25,16 +25,15 @@ public class WebScraper {
         this.url = url;
     }
 
-    public String scrape() throws IOException{
+    public Document scrape() throws IOException{
         if(this.cache.isCacheExpired()) {
             System.out.println("scraping......");
             this.document = Jsoup.connect(url).timeout(5000).get();
             cache.updateCache(this.document.html());
-            return this.document.html();
+            return this.document;
         }
         System.out.println("Sending cache");
-        String content = cache.getCacheData();
-        System.out.println(content);
+        Document content = cache.getCacheData();
         return content;
     }   
    
