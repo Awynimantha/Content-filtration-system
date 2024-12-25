@@ -15,6 +15,14 @@ public class NewsContent {
         this.url = url; 
     }
 
+    @Override
+    public String toString() {
+        if(url == null) {
+            return "Content: "+this.strContent;
+        } 
+        return "Content: "+this.strContent+", link: "+this.url;
+    }
+
     
     
 }

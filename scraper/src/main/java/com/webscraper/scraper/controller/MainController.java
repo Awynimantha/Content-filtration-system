@@ -28,8 +28,8 @@ public class MainController {
         String url = webScraper.getUrl();
         System.out.println(url);
         webScraper.setUrl(url);
-        Document document = webScraper.scrape(); 
-        return document.body().html();
+        String result = webScraper.getArticleHeadings();
+        return result;
     }
 
     
