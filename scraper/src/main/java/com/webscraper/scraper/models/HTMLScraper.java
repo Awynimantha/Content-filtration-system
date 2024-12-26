@@ -22,10 +22,10 @@ public class HTMLScraper {
     public String cardContentDiv;
     @Value("${HTMLScraper.cardLink_internal}")
     public String cardInternalLink;
-    @Value("${HTMLScraper.cardLink_external}")
-    public String cardExternalLink;
     @Value("${HTMLScraper.mainContent}")
     public String mainContent;
+    @Value("${scraper.url}")
+    public String baseUrl;
     public List<NewsContent> newsContents; 
 
     public HTMLScraper() {
@@ -37,13 +37,16 @@ public class HTMLScraper {
         Elements elements = mainContentEl.select(this.newsContainer);
         List<Elements> cards = new ArrayList<>();
         String url = "";
+        System.out.println(baseUrl);
         for(Element element: elements){
             Elements urlElement = element.select(this.cardInternalLink);
-            if(urlElement == null) {
-                urlElement = element.select(this.cardExternalLink);
-            }
             if(urlElement.first() != null) {
-                url = urlElement.first().text();
+                System.out.println(urlElement.attr("href"));
+                url = urlElement.attr("href");
+                if(!url.startsWith("https")) {
+                    url = baseUrl.concat(url);
+                }
+                url = "\"".concat(url).concat("\"");
             }
             Elements innerCards = element.select(this.cardDiv);
             for(Element card: innerCards) {
