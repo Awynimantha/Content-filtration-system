@@ -1,167 +1,188 @@
-2024-12-26T09:18:06.180+05:30 DEBUG 19083 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2024-12-26T09:18:06.620+05:30 DEBUG 19083 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2024-12-26T09:18:06.706+05:30 DEBUG 19083 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-12-26T09:18:06.738+05:30 DEBUG 19083 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-12-26T09:18:06.816+05:30 DEBUG 19083 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-12-26T09:18:09.745+05:30  INFO 19083 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-12-26T09:18:09.745+05:30 DEBUG 19083 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2024-12-26T09:18:09.745+05:30 DEBUG 19083 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2024-12-26T09:18:09.746+05:30 DEBUG 19083 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2024-12-26T09:18:09.746+05:30 DEBUG 19083 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6b58d726
-2024-12-26T09:18:09.747+05:30 DEBUG 19083 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@570b2e7b
-2024-12-26T09:18:09.747+05:30 DEBUG 19083 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2024-12-26T09:18:09.747+05:30  INFO 19083 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-12-26T09:18:29.170+05:30 DEBUG 19083 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
-2024-12-26T09:18:29.176+05:30 DEBUG 19083 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
-2024-12-26T09:18:29.636+05:30 DEBUG 19083 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
-2024-12-26T09:18:29.638+05:30 DEBUG 19083 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, link: LIVE (truncated)..."]
-2024-12-26T09:18:29.643+05:30 DEBUG 19083 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2024-12-26T09:20:38.697+05:30 DEBUG 20260 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2024-12-26T09:20:39.445+05:30 DEBUG 20260 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2024-12-26T09:20:39.645+05:30 DEBUG 20260 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-12-26T09:20:39.689+05:30 DEBUG 20260 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-12-26T09:20:39.761+05:30 DEBUG 20260 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-12-26T09:20:42.310+05:30 DEBUG 20356 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2024-12-26T09:20:42.446+05:30 DEBUG 20356 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2024-12-26T09:20:42.501+05:30 DEBUG 20356 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-12-26T09:20:42.528+05:30 DEBUG 20356 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-12-26T09:20:42.564+05:30 DEBUG 20356 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-12-26T09:20:44.276+05:30  INFO 20356 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-12-26T09:20:44.276+05:30 DEBUG 20356 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2024-12-26T09:20:44.276+05:30 DEBUG 20356 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2024-12-26T09:20:44.277+05:30 DEBUG 20356 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2024-12-26T09:20:44.277+05:30 DEBUG 20356 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3b096e10
-2024-12-26T09:20:44.278+05:30 DEBUG 20356 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2705dc23
-2024-12-26T09:20:44.278+05:30 DEBUG 20356 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2024-12-26T09:20:44.278+05:30  INFO 20356 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-12-26T09:20:44.297+05:30 DEBUG 20356 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
-2024-12-26T09:20:44.302+05:30 DEBUG 20356 --- [scraper] [http-nio-9080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
-2024-12-26T09:20:44.464+05:30 DEBUG 20356 --- [scraper] [http-nio-9080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
-2024-12-26T09:20:44.466+05:30 DEBUG 20356 --- [scraper] [http-nio-9080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, link: LIVE (truncated)..."]
-2024-12-26T09:20:44.475+05:30 DEBUG 20356 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2024-12-26T09:23:37.299+05:30 DEBUG 21343 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2024-12-26T09:23:37.491+05:30 DEBUG 21343 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2024-12-26T09:23:37.604+05:30 DEBUG 21343 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-12-26T09:23:37.640+05:30 DEBUG 21343 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-12-26T09:23:37.700+05:30 DEBUG 21343 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-12-26T09:23:39.692+05:30  INFO 21343 --- [scraper] [http-nio-9080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-12-26T09:23:39.693+05:30 DEBUG 21343 --- [scraper] [http-nio-9080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2024-12-26T09:23:39.693+05:30 DEBUG 21343 --- [scraper] [http-nio-9080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2024-12-26T09:23:39.693+05:30 DEBUG 21343 --- [scraper] [http-nio-9080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2024-12-26T09:23:39.694+05:30 DEBUG 21343 --- [scraper] [http-nio-9080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@27861c6c
-2024-12-26T09:23:39.694+05:30 DEBUG 21343 --- [scraper] [http-nio-9080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@739f0cb7
-2024-12-26T09:23:39.694+05:30 DEBUG 21343 --- [scraper] [http-nio-9080-exec-4] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2024-12-26T09:23:39.694+05:30  INFO 21343 --- [scraper] [http-nio-9080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-12-26T09:23:39.708+05:30 DEBUG 21343 --- [scraper] [http-nio-9080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
-2024-12-26T09:23:39.715+05:30 DEBUG 21343 --- [scraper] [http-nio-9080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
-2024-12-26T09:23:39.873+05:30 DEBUG 21343 --- [scraper] [http-nio-9080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
-2024-12-26T09:23:39.874+05:30 DEBUG 21343 --- [scraper] [http-nio-9080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, link: LIVE (truncated)..."]
-2024-12-26T09:23:39.882+05:30 DEBUG 21343 --- [scraper] [http-nio-9080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2024-12-26T09:26:55.900+05:30 DEBUG 22634 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2024-12-26T09:26:56.109+05:30 DEBUG 22634 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2024-12-26T09:26:56.194+05:30 DEBUG 22634 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-12-26T09:26:56.230+05:30 DEBUG 22634 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-12-26T09:26:56.285+05:30 DEBUG 22634 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-12-26T09:26:56.968+05:30  INFO 22634 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-12-26T09:26:56.969+05:30 DEBUG 22634 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2024-12-26T09:26:56.969+05:30 DEBUG 22634 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2024-12-26T09:26:56.969+05:30 DEBUG 22634 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2024-12-26T09:26:56.972+05:30 DEBUG 22634 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5fccf15e
-2024-12-26T09:26:56.975+05:30 DEBUG 22634 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@11051e51
-2024-12-26T09:26:56.975+05:30 DEBUG 22634 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2024-12-26T09:26:56.975+05:30  INFO 22634 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2024-12-26T09:26:57.975+05:30 DEBUG 22634 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
-2024-12-26T09:26:57.981+05:30 DEBUG 22634 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
-2024-12-26T09:26:58.118+05:30 DEBUG 22634 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
-2024-12-26T09:26:58.121+05:30 DEBUG 22634 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, link: http (truncated)..."]
-2024-12-26T09:26:58.128+05:30 DEBUG 22634 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2024-12-26T09:29:23.047+05:30 DEBUG 23458 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2024-12-26T09:29:23.230+05:30 DEBUG 23458 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2024-12-26T09:29:23.332+05:30 DEBUG 23458 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-12-26T09:29:23.357+05:30 DEBUG 23458 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-12-26T09:29:23.424+05:30 DEBUG 23458 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-12-26T09:29:25.253+05:30  INFO 23458 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-12-26T09:29:25.253+05:30 DEBUG 23458 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2024-12-26T09:29:25.253+05:30 DEBUG 23458 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2024-12-26T09:29:25.254+05:30 DEBUG 23458 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2024-12-26T09:29:25.254+05:30 DEBUG 23458 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2f398bb
-2024-12-26T09:29:25.255+05:30 DEBUG 23458 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6afd0585
-2024-12-26T09:29:25.255+05:30 DEBUG 23458 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2024-12-26T09:29:25.255+05:30  INFO 23458 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-12-26T09:29:25.272+05:30 DEBUG 23458 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
-2024-12-26T09:29:25.278+05:30 DEBUG 23458 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
-2024-12-26T09:29:25.409+05:30 DEBUG 23458 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
-2024-12-26T09:29:25.411+05:30 DEBUG 23458 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, link: http (truncated)..."]
-2024-12-26T09:29:25.419+05:30 DEBUG 23458 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2024-12-26T09:30:37.305+05:30 DEBUG 23980 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2024-12-26T09:30:37.454+05:30 DEBUG 23980 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2024-12-26T09:30:37.526+05:30 DEBUG 23980 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-12-26T09:30:37.552+05:30 DEBUG 23980 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-12-26T09:30:37.596+05:30 DEBUG 23980 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-12-26T09:30:38.451+05:30  INFO 23980 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-12-26T09:30:38.451+05:30 DEBUG 23980 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2024-12-26T09:30:38.451+05:30 DEBUG 23980 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2024-12-26T09:30:38.452+05:30 DEBUG 23980 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2024-12-26T09:30:38.452+05:30 DEBUG 23980 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4e2dba12
-2024-12-26T09:30:38.453+05:30 DEBUG 23980 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@597bd6ef
-2024-12-26T09:30:38.453+05:30 DEBUG 23980 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2024-12-26T09:30:38.453+05:30  INFO 23980 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-12-26T09:30:38.477+05:30 DEBUG 23980 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
-2024-12-26T09:30:38.486+05:30 DEBUG 23980 --- [scraper] [http-nio-9080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
-2024-12-26T09:30:38.649+05:30 DEBUG 23980 --- [scraper] [http-nio-9080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
-2024-12-26T09:30:38.653+05:30 DEBUG 23980 --- [scraper] [http-nio-9080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, link: 'htt (truncated)..."]
-2024-12-26T09:30:38.662+05:30 DEBUG 23980 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2024-12-26T09:31:21.661+05:30 DEBUG 24325 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2024-12-26T09:31:21.813+05:30 DEBUG 24325 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2024-12-26T09:31:21.882+05:30 DEBUG 24325 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-12-26T09:31:21.911+05:30 DEBUG 24325 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-12-26T09:31:21.975+05:30 DEBUG 24325 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-12-26T09:31:22.411+05:30  INFO 24325 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-12-26T09:31:22.412+05:30 DEBUG 24325 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2024-12-26T09:31:22.412+05:30 DEBUG 24325 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2024-12-26T09:31:22.412+05:30 DEBUG 24325 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2024-12-26T09:31:22.436+05:30 DEBUG 24325 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@763fe454
-2024-12-26T09:31:22.437+05:30 DEBUG 24325 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7b104d2c
-2024-12-26T09:31:22.437+05:30 DEBUG 24325 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2024-12-26T09:31:22.437+05:30  INFO 24325 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
-2024-12-26T09:31:23.698+05:30 DEBUG 24325 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
-2024-12-26T09:31:23.705+05:30 DEBUG 24325 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
-2024-12-26T09:31:23.839+05:30 DEBUG 24325 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
-2024-12-26T09:31:23.841+05:30 DEBUG 24325 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, link: 'htt (truncated)..."]
-2024-12-26T09:31:23.846+05:30 DEBUG 24325 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2024-12-26T09:32:01.629+05:30 DEBUG 24661 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2024-12-26T09:32:01.787+05:30 DEBUG 24661 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2024-12-26T09:32:01.861+05:30 DEBUG 24661 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-12-26T09:32:01.887+05:30 DEBUG 24661 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-12-26T09:32:01.932+05:30 DEBUG 24661 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-12-26T09:32:05.315+05:30  INFO 24661 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-12-26T09:32:05.316+05:30 DEBUG 24661 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2024-12-26T09:32:05.316+05:30 DEBUG 24661 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2024-12-26T09:32:05.316+05:30 DEBUG 24661 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2024-12-26T09:32:05.317+05:30 DEBUG 24661 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2df20ec8
-2024-12-26T09:32:05.317+05:30 DEBUG 24661 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@56d566df
-2024-12-26T09:32:05.318+05:30 DEBUG 24661 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2024-12-26T09:32:05.318+05:30  INFO 24661 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2024-12-26T09:32:07.833+05:30 DEBUG 24661 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
-2024-12-26T09:32:07.838+05:30 DEBUG 24661 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
-2024-12-26T09:32:07.988+05:30 DEBUG 24661 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
-2024-12-26T09:32:07.990+05:30 DEBUG 24661 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, link: 'htt (truncated)..."]
-2024-12-26T09:32:07.998+05:30 DEBUG 24661 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2024-12-26T09:32:30.031+05:30 DEBUG 24913 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2024-12-26T09:32:30.158+05:30 DEBUG 24913 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2024-12-26T09:32:30.209+05:30 DEBUG 24913 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-12-26T09:32:30.231+05:30 DEBUG 24913 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-12-26T09:32:30.264+05:30 DEBUG 24913 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-12-26T09:32:30.944+05:30  INFO 24913 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-12-26T09:32:30.944+05:30 DEBUG 24913 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2024-12-26T09:32:30.944+05:30 DEBUG 24913 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2024-12-26T09:32:30.944+05:30 DEBUG 24913 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2024-12-26T09:32:30.945+05:30 DEBUG 24913 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@f54aaec
-2024-12-26T09:32:30.945+05:30 DEBUG 24913 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@25edb9f2
-2024-12-26T09:32:30.945+05:30 DEBUG 24913 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2024-12-26T09:32:30.945+05:30  INFO 24913 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-12-26T09:32:32.240+05:30 DEBUG 24913 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
-2024-12-26T09:32:32.246+05:30 DEBUG 24913 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
-2024-12-26T09:32:32.398+05:30 DEBUG 24913 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
-2024-12-26T09:32:32.400+05:30 DEBUG 24913 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, link: "htt (truncated)..."]
-2024-12-26T09:32:32.407+05:30 DEBUG 24913 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-27T13:32:36.537+05:30 DEBUG 78726 --- [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-27T13:32:36.705+05:30 ERROR 78726 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mainController' defined in file [/media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/scraper/target/classes/com/webscraper/scraper/controller/MainController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'webScraper' defined in file [/media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/scraper/target/classes/com/webscraper/scraper/models/WebScraper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'HTMLScraper': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1371)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1208)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.webscraper.scraper.ScraperApplication.main(ScraperApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webScraper' defined in file [/media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/scraper/target/classes/com/webscraper/scraper/models/WebScraper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'HTMLScraper': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1371)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1208)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'HTMLScraper': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 35 common frames omitted
+Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'HTMLScraper.containerDiv' in value "${HTMLScraper.containerDiv}"
+	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81)
+	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:416)
+	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:128)
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:118)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:114)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:255)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:226)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:201)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:963)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1536)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	... 47 common frames omitted
+
+2024-12-27T13:51:32.366+05:30 DEBUG 89935 --- [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-27T13:51:32.497+05:30 ERROR 89935 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mainController' defined in file [/media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/scraper/target/classes/com/webscraper/scraper/controller/MainController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'webScraper' defined in file [/media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/scraper/target/classes/com/webscraper/scraper/models/WebScraper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'HTMLScraper': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1371)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1208)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.webscraper.scraper.ScraperApplication.main(ScraperApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webScraper' defined in file [/media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/scraper/target/classes/com/webscraper/scraper/models/WebScraper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'HTMLScraper': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1371)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1208)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 21 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'HTMLScraper': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 35 common frames omitted
+Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'HTMLScraper.containerDiv' in value "${HTMLScraper.containerDiv}"
+	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81)
+	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:416)
+	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:128)
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:118)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:114)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:255)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:226)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:201)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:963)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1536)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	... 47 common frames omitted
+
+2024-12-27T13:54:13.144+05:30 DEBUG 91561 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-27T13:54:13.443+05:30 DEBUG 91561 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-27T13:54:13.588+05:30 DEBUG 91561 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-27T13:54:13.638+05:30 DEBUG 91561 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-27T13:54:13.717+05:30 DEBUG 91561 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-27T13:54:15.995+05:30  INFO 91561 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-27T13:54:15.996+05:30 DEBUG 91561 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-27T13:54:15.996+05:30 DEBUG 91561 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-27T13:54:15.996+05:30 DEBUG 91561 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-27T13:54:15.997+05:30 DEBUG 91561 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@57d82f98
+2024-12-27T13:54:15.998+05:30 DEBUG 91561 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@57b226bd
+2024-12-27T13:54:15.998+05:30 DEBUG 91561 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-27T13:54:15.999+05:30  INFO 91561 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-27T13:55:08.377+05:30 DEBUG 91561 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
+2024-12-27T13:55:08.389+05:30 DEBUG 91561 --- [scraper] [http-nio-9080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
+2024-12-27T13:55:08.863+05:30 DEBUG 91561 --- [scraper] [http-nio-9080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-12-27T13:55:08.865+05:30 DEBUG 91561 --- [scraper] [http-nio-9080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, link: "htt (truncated)..."]
+2024-12-27T13:55:08.872+05:30 DEBUG 91561 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-12-27T14:08:31.191+05:30 DEBUG 99762 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-12-27T14:08:31.398+05:30 DEBUG 99762 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-12-27T14:08:31.479+05:30 DEBUG 99762 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-12-27T14:08:31.511+05:30 DEBUG 99762 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-12-27T14:08:31.562+05:30 DEBUG 99762 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-12-27T14:08:33.828+05:30  INFO 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-27T14:08:33.829+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-12-27T14:08:33.829+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-12-27T14:08:33.829+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-12-27T14:08:33.830+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@24584e76
+2024-12-27T14:08:33.830+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3eb4f60c
+2024-12-27T14:08:33.830+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-12-27T14:08:33.831+05:30  INFO 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-12-27T14:08:33.847+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
+2024-12-27T14:08:33.858+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
+2024-12-27T14:08:34.054+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-12-27T14:08:34.058+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, link: "htt (truncated)..."]
+2024-12-27T14:08:34.062+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
