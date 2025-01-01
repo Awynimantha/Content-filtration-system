@@ -1,188 +1,528 @@
-2024-12-27T13:32:36.537+05:30 DEBUG 78726 --- [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2024-12-27T13:32:36.705+05:30 ERROR 78726 --- [main] o.s.boot.SpringApplication               : Application run failed
+2025-01-01T09:07:05.564+05:30 DEBUG 19579 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-01-01T09:07:06.219+05:30 DEBUG 19579 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-01-01T09:07:06.361+05:30 DEBUG 19579 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-01T09:07:06.432+05:30 DEBUG 19579 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-01T09:07:06.562+05:30 DEBUG 19579 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-01T09:07:10.013+05:30  INFO 19579 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-01-01T09:07:10.016+05:30 DEBUG 19579 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-01-01T09:07:10.017+05:30 DEBUG 19579 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-01-01T09:07:10.018+05:30 DEBUG 19579 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-01-01T09:07:10.028+05:30 DEBUG 19579 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@52bcd385
+2025-01-01T09:07:10.032+05:30 DEBUG 19579 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@496884fe
+2025-01-01T09:07:10.034+05:30 DEBUG 19579 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-01-01T09:07:10.035+05:30  INFO 19579 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2025-01-01T11:00:58.286+05:30 DEBUG 58035 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-01-01T11:00:58.410+05:30 DEBUG 58035 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-01-01T11:00:58.449+05:30 DEBUG 58035 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-01T11:00:58.466+05:30 DEBUG 58035 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-01T11:00:58.496+05:30 DEBUG 58035 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-01T11:12:04.204+05:30 DEBUG 61825 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-01-01T11:12:04.298+05:30 DEBUG 61825 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-01-01T11:12:04.339+05:30 DEBUG 61825 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-01T11:12:04.356+05:30 DEBUG 61825 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-01T11:12:04.384+05:30 DEBUG 61825 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-01T11:13:10.539+05:30 DEBUG 62269 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-01-01T11:13:10.622+05:30 DEBUG 62269 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-01-01T11:13:10.660+05:30 DEBUG 62269 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-01T11:13:10.676+05:30 DEBUG 62269 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-01T11:13:10.702+05:30 DEBUG 62269 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-01T11:13:27.922+05:30 DEBUG 62475 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-01-01T11:13:28.004+05:30 DEBUG 62475 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-01-01T11:13:28.043+05:30 DEBUG 62475 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-01T11:13:28.063+05:30 DEBUG 62475 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-01T11:13:28.088+05:30 DEBUG 62475 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-01T11:18:04.608+05:30 DEBUG 64186 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-01-01T11:18:04.725+05:30 DEBUG 64186 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-01-01T11:18:04.764+05:30 DEBUG 64186 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-01T11:18:04.781+05:30 DEBUG 64186 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-01T11:18:04.810+05:30 DEBUG 64186 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-01T11:21:56.346+05:30 DEBUG 65557 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-01-01T11:21:56.435+05:30 DEBUG 65557 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-01-01T11:21:56.474+05:30 DEBUG 65557 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-01T11:21:56.491+05:30 DEBUG 65557 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-01T11:21:56.519+05:30 DEBUG 65557 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-01T12:40:56.948+05:30 DEBUG 113469 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-01-01T12:40:57.085+05:30 DEBUG 113469 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-01-01T12:40:57.128+05:30 DEBUG 113469 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-01T12:40:57.147+05:30 DEBUG 113469 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-01T12:40:57.177+05:30 DEBUG 113469 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-01T12:53:52.716+05:30 DEBUG 123016 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-01-01T12:53:52.861+05:30 DEBUG 123016 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-01-01T12:53:52.912+05:30 DEBUG 123016 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-01T12:53:53.010+05:30 DEBUG 123016 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-01T12:53:53.067+05:30 DEBUG 123016 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-01T12:53:53.609+05:30 DEBUG 123016 --- [scraper] [main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/
+2025-01-01T12:53:53.671+05:30 DEBUG 123016 --- [scraper] [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:53:53.719+05:30 DEBUG 123016 --- [scraper] [main] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:53:53.720+05:30 DEBUG 123016 --- [scraper] [main] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T12:53:53.744+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:9082/eureka/apps/SCRAPER
+2025-01-01T12:53:53.746+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:53:53.761+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = 192.168.152.55:scraper:9080, appName = SCRAPER, hostName = 192.168.152.55, status = UP, ipAddr = 192.168.152.55, port = 9080, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@5198eae9] as "application/json"
+2025-01-01T12:53:53.853+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2025-01-01T12:54:23.732+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/
+2025-01-01T12:54:23.734+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:54:23.735+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716233740
+2025-01-01T12:54:23.745+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:54:23.746+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:54:23.746+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T12:54:23.760+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:54:53.759+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T12:54:53.761+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716233740
+2025-01-01T12:54:54.056+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:54:54.057+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:54:54.061+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:54:54.062+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:54:54.063+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T12:55:24.063+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716233740
+2025-01-01T12:55:24.064+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:55:24.065+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T12:55:24.066+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:55:24.070+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:55:24.070+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:55:24.070+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T12:55:54.071+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716233740
+2025-01-01T12:55:54.072+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T12:55:54.073+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:55:54.073+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:55:54.080+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:55:54.080+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:55:54.081+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T12:56:24.082+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716233740
+2025-01-01T12:56:24.084+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T12:56:24.085+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:56:24.085+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:56:24.092+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:56:24.092+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:56:24.093+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T12:56:54.094+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716233740
+2025-01-01T12:56:54.095+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:56:54.096+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T12:56:54.096+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:56:54.099+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:56:54.100+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:56:54.100+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T12:57:24.101+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716233740
+2025-01-01T12:57:24.101+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T12:57:24.102+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:57:24.102+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:57:24.110+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:57:24.110+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:57:24.111+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T12:57:54.112+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716233740
+2025-01-01T12:57:54.113+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:57:54.114+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T12:57:54.115+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:57:54.129+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T12:57:54.130+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716233740
+2025-01-01T12:57:54.133+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:57:54.135+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:57:54.135+05:30 ERROR 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCRAPER/192.168.152.55:scraper:9080 - was unable to send heartbeat!
 
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mainController' defined in file [/media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/scraper/target/classes/com/webscraper/scraper/controller/MainController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'webScraper' defined in file [/media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/scraper/target/classes/com/webscraper/scraper/models/WebScraper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'HTMLScraper': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1371)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1208)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.webscraper.scraper.ScraperApplication.main(ScraperApplication.java:10)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webScraper' defined in file [/media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/scraper/target/classes/com/webscraper/scraper/models/WebScraper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'HTMLScraper': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1371)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1208)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
-	... 21 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'HTMLScraper': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:515)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
-	... 35 common frames omitted
-Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'HTMLScraper.containerDiv' in value "${HTMLScraper.containerDiv}"
-	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81)
-	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:416)
-	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:128)
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:118)
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:114)
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:255)
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:226)
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:201)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:963)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1536)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
-	... 47 common frames omitted
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:845)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1402)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-2024-12-27T13:51:32.366+05:30 DEBUG 89935 --- [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2024-12-27T13:51:32.497+05:30 ERROR 89935 --- [main] o.s.boot.SpringApplication               : Application run failed
+2025-01-01T12:58:24.143+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T12:58:24.145+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716233740
+2025-01-01T12:58:24.155+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:58:24.155+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:58:24.157+05:30 ERROR 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCRAPER/192.168.152.55:scraper:9080 - was unable to send heartbeat!
 
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mainController' defined in file [/media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/scraper/target/classes/com/webscraper/scraper/controller/MainController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'webScraper' defined in file [/media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/scraper/target/classes/com/webscraper/scraper/models/WebScraper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'HTMLScraper': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1371)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1208)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.webscraper.scraper.ScraperApplication.main(ScraperApplication.java:10)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webScraper' defined in file [/media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/scraper/target/classes/com/webscraper/scraper/models/WebScraper.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'HTMLScraper': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1371)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1208)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
-	... 21 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'HTMLScraper': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:515)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1435)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1626)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
-	... 35 common frames omitted
-Caused by: org.springframework.util.PlaceholderResolutionException: Could not resolve placeholder 'HTMLScraper.containerDiv' in value "${HTMLScraper.containerDiv}"
-	at org.springframework.util.PlaceholderResolutionException.withValue(PlaceholderResolutionException.java:81)
-	at org.springframework.util.PlaceholderParser$ParsedValue.resolve(PlaceholderParser.java:416)
-	at org.springframework.util.PlaceholderParser.replacePlaceholders(PlaceholderParser.java:128)
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:118)
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:114)
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:255)
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:226)
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:201)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:963)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1536)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1514)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
-	... 47 common frames omitted
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:845)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1402)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-2024-12-27T13:54:13.144+05:30 DEBUG 91561 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2024-12-27T13:54:13.443+05:30 DEBUG 91561 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2024-12-27T13:54:13.588+05:30 DEBUG 91561 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-12-27T13:54:13.638+05:30 DEBUG 91561 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-12-27T13:54:13.717+05:30 DEBUG 91561 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-12-27T13:54:15.995+05:30  INFO 91561 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-12-27T13:54:15.996+05:30 DEBUG 91561 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2024-12-27T13:54:15.996+05:30 DEBUG 91561 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2024-12-27T13:54:15.996+05:30 DEBUG 91561 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2024-12-27T13:54:15.997+05:30 DEBUG 91561 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@57d82f98
-2024-12-27T13:54:15.998+05:30 DEBUG 91561 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@57b226bd
-2024-12-27T13:54:15.998+05:30 DEBUG 91561 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2024-12-27T13:54:15.999+05:30  INFO 91561 --- [scraper] [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-12-27T13:55:08.377+05:30 DEBUG 91561 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
-2024-12-27T13:55:08.389+05:30 DEBUG 91561 --- [scraper] [http-nio-9080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
-2024-12-27T13:55:08.863+05:30 DEBUG 91561 --- [scraper] [http-nio-9080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
-2024-12-27T13:55:08.865+05:30 DEBUG 91561 --- [scraper] [http-nio-9080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, link: "htt (truncated)..."]
-2024-12-27T13:55:08.872+05:30 DEBUG 91561 --- [scraper] [http-nio-9080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2024-12-27T14:08:31.191+05:30 DEBUG 99762 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2024-12-27T14:08:31.398+05:30 DEBUG 99762 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2024-12-27T14:08:31.479+05:30 DEBUG 99762 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2024-12-27T14:08:31.511+05:30 DEBUG 99762 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2024-12-27T14:08:31.562+05:30 DEBUG 99762 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2024-12-27T14:08:33.828+05:30  INFO 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-12-27T14:08:33.829+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2024-12-27T14:08:33.829+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2024-12-27T14:08:33.829+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2024-12-27T14:08:33.830+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@24584e76
-2024-12-27T14:08:33.830+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3eb4f60c
-2024-12-27T14:08:33.830+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2024-12-27T14:08:33.831+05:30  INFO 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2024-12-27T14:08:33.847+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/v1/scraper/scrape", parameters={}
-2024-12-27T14:08:33.858+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.webscraper.scraper.controller.MainController#getScrapedData()
-2024-12-27T14:08:34.054+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
-2024-12-27T14:08:34.058+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["[Content: American Airlines flights delayed after all services grounded on Christmas Eve, link: "htt (truncated)..."]
-2024-12-27T14:08:34.062+05:30 DEBUG 99762 --- [scraper] [http-nio-9080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-01-01T12:58:54.163+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T12:58:54.163+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716233740
+2025-01-01T12:58:54.171+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:58:54.172+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:58:54.173+05:30 ERROR 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCRAPER/192.168.152.55:scraper:9080 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:845)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1402)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2025-01-01T12:59:24.179+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716233740
+2025-01-01T12:59:24.179+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T12:59:24.184+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:59:24.185+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:59:24.185+05:30 ERROR 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCRAPER/192.168.152.55:scraper:9080 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:845)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1402)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2025-01-01T12:59:54.190+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T12:59:54.190+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716233740
+2025-01-01T12:59:54.195+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:59:54.197+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:59:54.431+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:59:54.432+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T12:59:54.433+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/
+2025-01-01T12:59:54.433+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:59:54.440+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T12:59:54.440+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T12:59:54.490+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 404 NOT_FOUND
+2025-01-01T12:59:54.492+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:9082/eureka/apps/SCRAPER
+2025-01-01T12:59:54.492+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T12:59:54.494+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = 192.168.152.55:scraper:9080, appName = SCRAPER, hostName = 192.168.152.55, status = UP, ipAddr = 192.168.152.55, port = 9080, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@5198eae9] as "application/json"
+2025-01-01T12:59:54.547+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2025-01-01T13:00:24.442+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/
+2025-01-01T13:00:24.442+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:00:24.449+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:00:24.449+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:00:24.548+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716594492
+2025-01-01T13:00:24.550+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:00:24.565+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:00:54.455+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:00:54.456+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:00:54.567+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716594492
+2025-01-01T13:00:54.567+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:00:54.592+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:00:54.592+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:00:54.593+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/
+2025-01-01T13:00:54.593+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:00:54.599+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:00:54.600+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:00:54.647+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 404 NOT_FOUND
+2025-01-01T13:00:54.649+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:9082/eureka/apps/SCRAPER
+2025-01-01T13:00:54.650+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:00:54.650+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = 192.168.152.55:scraper:9080, appName = SCRAPER, hostName = 192.168.152.55, status = UP, ipAddr = 192.168.152.55, port = 9080, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@5198eae9] as "application/json"
+2025-01-01T13:00:54.691+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2025-01-01T13:01:24.601+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/
+2025-01-01T13:01:24.602+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:01:24.611+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:01:24.612+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:01:24.692+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716654649
+2025-01-01T13:01:24.693+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:01:24.705+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:01:43.872+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:9082/eureka/apps/SCRAPER
+2025-01-01T13:01:43.874+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:01:43.875+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = 192.168.152.55:scraper:9080, appName = SCRAPER, hostName = 192.168.152.55, status = DOWN, ipAddr = 192.168.152.55, port = 9080, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@5198eae9] as "application/json"
+2025-01-01T13:01:43.888+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:9082/eureka/apps/SCRAPER
+2025-01-01T13:01:43.889+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:01:43.891+05:30 DEBUG 123016 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = 192.168.152.55:scraper:9080, appName = SCRAPER, hostName = 192.168.152.55, status = DOWN, ipAddr = 192.168.152.55, port = 9080, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@5198eae9] as "application/json"
+2025-01-01T13:01:46.899+05:30 DEBUG 123016 --- [scraper] [SpringApplicationShutdownHook] o.s.web.client.RestTemplate              : HTTP DELETE http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080
+2025-01-01T13:01:46.900+05:30 DEBUG 123016 --- [scraper] [SpringApplicationShutdownHook] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:01:46.901+05:30 ERROR 123016 --- [scraper] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCRAPER/192.168.152.55:scraper:9080 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:919)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:900)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:415)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:239)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:202)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:195)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:389)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:667)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:624)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1363)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:583)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1356)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1219)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2025-01-01T13:03:34.422+05:30 DEBUG 130450 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-01-01T13:03:34.536+05:30 DEBUG 130450 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-01-01T13:03:34.585+05:30 DEBUG 130450 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-01T13:03:34.685+05:30 DEBUG 130450 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-01T13:03:34.736+05:30 DEBUG 130450 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-01T13:03:35.309+05:30 DEBUG 130450 --- [scraper] [main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/
+2025-01-01T13:03:35.359+05:30 DEBUG 130450 --- [scraper] [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:03:35.517+05:30 DEBUG 130450 --- [scraper] [main] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:03:35.519+05:30 DEBUG 130450 --- [scraper] [main] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:03:35.541+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:9082/eureka/apps/SCRAPER
+2025-01-01T13:03:35.543+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:03:35.553+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = 192.168.152.55:scraper:9080, appName = SCRAPER, hostName = 192.168.152.55, status = UP, ipAddr = 192.168.152.55, port = 9080, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@3a2b22e1] as "application/json"
+2025-01-01T13:03:35.623+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2025-01-01T13:04:05.535+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/
+2025-01-01T13:04:05.536+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:04:05.537+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716815537
+2025-01-01T13:04:05.548+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:04:05.548+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:04:05.549+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:04:05.572+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:04:35.570+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:04:35.572+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:04:35.574+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716815537
+2025-01-01T13:04:35.574+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:04:35.578+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:04:35.578+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:04:35.578+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:05:05.580+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:05:05.580+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716815537
+2025-01-01T13:05:05.582+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:05:05.582+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:05:05.593+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:05:05.593+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:05:05.594+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:05:35.595+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716815537
+2025-01-01T13:05:35.597+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:05:35.598+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:05:35.598+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:05:35.602+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:05:35.603+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:05:35.603+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:06:05.604+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716815537
+2025-01-01T13:06:05.604+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:06:05.604+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:06:05.604+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:06:05.610+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:06:05.610+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:06:05.610+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:06:35.611+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716815537
+2025-01-01T13:06:35.611+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:06:35.611+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:06:35.612+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:06:35.616+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:06:35.616+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:06:35.616+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:07:05.617+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716815537
+2025-01-01T13:07:05.618+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:07:05.618+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:07:05.618+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:07:05.625+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:07:05.625+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:07:05.626+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:07:35.627+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716815537
+2025-01-01T13:07:35.628+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:07:35.628+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:07:35.629+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:07:35.636+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:07:35.636+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:07:35.637+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:08:05.638+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716815537
+2025-01-01T13:08:05.640+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:08:05.844+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:08:05.844+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:08:05.853+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:08:05.853+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:08:05.854+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:08:35.855+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716815537
+2025-01-01T13:08:35.856+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:08:35.856+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:08:35.857+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:08:35.865+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:08:35.865+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:08:35.865+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:09:05.866+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716815537
+2025-01-01T13:09:05.867+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:09:05.867+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:09:05.868+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:09:05.874+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:09:05.874+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:09:05.875+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:09:35.876+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716815537
+2025-01-01T13:09:35.876+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:09:35.877+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:09:35.877+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:09:35.886+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:09:35.886+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:09:35.887+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:10:05.889+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716815537
+2025-01-01T13:10:05.889+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:10:05.890+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:10:05.890+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:10:05.898+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:10:05.898+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:10:05.899+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:10:35.900+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716815537
+2025-01-01T13:10:35.901+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:10:35.901+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:10:35.902+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:10:35.909+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:10:35.909+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:10:35.910+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:11:06.225+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:11:06.225+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735716815537
+2025-01-01T13:11:32.364+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:11:36.015+05:30 DEBUG 130450 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:21:34.649+05:30 DEBUG 9952 --- [scraper] [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-01-01T13:21:34.749+05:30 DEBUG 9952 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2025-01-01T13:21:34.792+05:30 DEBUG 9952 --- [scraper] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-01T13:21:34.889+05:30 DEBUG 9952 --- [scraper] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-01T13:21:34.936+05:30 DEBUG 9952 --- [scraper] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-01T13:21:35.590+05:30 DEBUG 9952 --- [scraper] [main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/
+2025-01-01T13:21:35.637+05:30 DEBUG 9952 --- [scraper] [main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:21:35.776+05:30 DEBUG 9952 --- [scraper] [main] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:21:35.778+05:30 DEBUG 9952 --- [scraper] [main] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:21:35.793+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:9082/eureka/apps/SCRAPER
+2025-01-01T13:21:35.795+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:21:35.810+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = 192.168.152.55:scraper:9080, appName = SCRAPER, hostName = 192.168.152.55, status = UP, ipAddr = 192.168.152.55, port = 9080, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@3fd3d2db] as "application/json"
+2025-01-01T13:21:35.876+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2025-01-01T13:22:05.787+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/
+2025-01-01T13:22:05.788+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:22:05.790+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735717895790
+2025-01-01T13:22:05.798+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:22:05.806+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735717895790
+2025-01-01T13:22:05.806+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/
+2025-01-01T13:22:05.809+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:22:05.810+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:22:05.810+05:30 ERROR 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SCRAPER/192.168.152.55:scraper:9080 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:845)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1402)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+2025-01-01T13:22:35.816+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735717895790
+2025-01-01T13:22:35.816+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/
+2025-01-01T13:22:35.819+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:22:35.822+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:22:35.995+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:22:35.996+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:22:36.051+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 404 NOT_FOUND
+2025-01-01T13:22:36.052+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:9082/eureka/apps/SCRAPER
+2025-01-01T13:22:36.053+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:22:36.055+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = 192.168.152.55:scraper:9080, appName = SCRAPER, hostName = 192.168.152.55, status = UP, ipAddr = 192.168.152.55, port = 9080, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@3fd3d2db] as "application/json"
+2025-01-01T13:22:36.112+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2025-01-01T13:23:05.997+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/
+2025-01-01T13:23:05.999+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:23:06.004+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:23:06.004+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:23:06.113+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735717956052
+2025-01-01T13:23:06.114+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:23:06.123+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:23:36.014+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:23:36.015+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:23:36.025+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:23:36.025+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:23:36.124+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735717956052
+2025-01-01T13:23:36.125+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:23:36.134+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:24:06.030+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:24:06.035+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:24:06.041+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:24:06.042+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:24:06.139+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735717956052
+2025-01-01T13:24:06.142+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:24:06.148+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:24:36.044+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:24:36.045+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:24:36.053+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:24:36.054+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:24:36.150+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735717956052
+2025-01-01T13:24:36.150+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:24:36.154+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:25:06.057+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:25:06.059+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:25:06.067+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:25:06.068+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:25:06.155+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735717956052
+2025-01-01T13:25:06.156+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:25:06.160+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:25:36.071+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:25:36.073+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:25:36.083+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:25:36.084+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:25:36.161+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735717956052
+2025-01-01T13:25:36.162+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:25:36.166+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:26:06.089+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:26:06.090+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:26:06.097+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:26:06.097+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:26:06.167+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735717956052
+2025-01-01T13:26:06.168+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:26:06.178+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:26:36.100+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:26:36.101+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:26:36.105+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:26:36.106+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:26:36.181+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735717956052
+2025-01-01T13:26:36.182+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:26:36.188+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:27:06.107+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:27:06.108+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:27:06.112+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:27:06.112+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:27:06.189+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735717956052
+2025-01-01T13:27:06.190+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:27:06.194+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:27:36.113+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/delta
+2025-01-01T13:27:36.114+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:27:36.195+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735717956052
+2025-01-01T13:27:36.195+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:27:36.281+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:27:36.281+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:27:36.283+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/
+2025-01-01T13:27:36.283+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:27:36.293+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:27:36.293+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:27:36.331+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 404 NOT_FOUND
+2025-01-01T13:27:36.332+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:9082/eureka/apps/SCRAPER
+2025-01-01T13:27:36.333+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:27:36.334+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = 192.168.152.55:scraper:9080, appName = SCRAPER, hostName = 192.168.152.55, status = UP, ipAddr = 192.168.152.55, port = 9080, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@3fd3d2db] as "application/json"
+2025-01-01T13:27:36.371+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2025-01-01T13:28:06.295+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:9082/eureka/apps/
+2025-01-01T13:28:06.296+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:28:06.305+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-01-01T13:28:06.305+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-01-01T13:28:06.372+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:9082/eureka/apps/SCRAPER/192.168.152.55:scraper:9080?status=UP&lastDirtyTimestamp=1735718256332
+2025-01-01T13:28:06.373+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-01-01T13:28:06.384+05:30 DEBUG 9952 --- [scraper] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK

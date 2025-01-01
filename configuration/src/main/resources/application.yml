@@ -7,4 +7,4 @@ spring:
         config:
             server:
                 native:
-                    searchLocations: file:///media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/configuration/src/main/resources/config/scraper
+                    searchLocations: file:///media/yasiru/New Volume/PROJECTS/java/new-recommendation-system/micro-service/configuration/src/main/resources/config
