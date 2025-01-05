@@ -1,5 +1,5 @@
-from data_collection.data_collector import *
+from data_collection.data_preprocessor import *
 
-dc = DataCollector().fit().transform()
+dc = DataPreProcessor().fit().transform()
 
 
