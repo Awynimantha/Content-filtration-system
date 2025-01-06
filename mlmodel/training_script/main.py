@@ -1,5 +1,15 @@
 from data_collection.data_preprocessor import *
+from feature_extraction.feature_extractor import FeatureExtractor
+from pipeline.pipeline import *
 
-dc = DataPreProcessor().fit().transform()
+pipeline =  Pipeline([
+        DataPreProcessor(),
+        FeatureExtractor()  
+])
+
+pipeline.execute()
+
+
+
 
 

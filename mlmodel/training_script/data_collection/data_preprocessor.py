@@ -1,3 +1,4 @@
+from pandas._libs.hashtable import mode
 from configuration.config import *
 import pandas as pd
 import nltk
@@ -10,6 +11,7 @@ nltk.download('stopwords')
 nltk.download('wordnet')
 
 class DataPreProcessor:
+    #self.data will act as the central buffer
     def getColoumn(self, column) -> None:
         listData = pd.read_csv(self.fileName, names=["category", "filename", "title", "content" ], delimiter="\t")
         columns = [column]+["category"]
@@ -37,12 +39,31 @@ class DataPreProcessor:
             modifiedList = modifiedList + [tempData]
         self.data = modifiedList
 
+    def joinWords(self):
+        modifiedList = []
+        for string in self.data:
+            tempData = " ".join(string)
+            modifiedList = modifiedList + [tempData]
+        self.data = modifiedList
+
+    def fixLabel(self):
+        labels = self.labeledData['category'].values
+        modifiedLables = []
+        for label in labels:
+            if(label == "business"):
+                modifiedLables.append(1)
+            else:
+                modifiedLables.append(0)
+        
+        return modifiedLables
+
     def process(self, columnName) -> None:
         self.getColoumn(columnName) #process only title column
         self.lowerCase()
         self.tokenizeText()
         self.removeStopW()
         self.lemmatize()
+        self.joinWords()
 
     def fit(self, X = None, y = None):
         self.fileName = Configurations().INPUT_FILELOCATION  
@@ -50,7 +71,8 @@ class DataPreProcessor:
     
     def transform(self, X = None):
         self.process("title") 
-        labels = self.labeledData['category'].values
+        labels = self.fixLabel()
+        self.fixLabel()
         return self.data,labels 
 
-    
+   
