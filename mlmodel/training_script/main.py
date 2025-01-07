@@ -14,16 +14,4 @@ if(train):
     ])
     pipeline.execute()
 
-model = None
-tfidf = None
-with open(Configurations().MODEL_OUTPUT, 'rb') as svm_model:
-    model = pickle.load(svm_model)
-
-
-with open(Configurations.TFIDF_MATRIX_OUTPUT, 'rb') as tfidf_file:
-    tfidf = pickle.load(tfidf_file)
-
-vector = tfidf.transform(["US warplane shot down in Red Sea 'friendly fire' incident"])
-print(model.predict(vector))
-
 

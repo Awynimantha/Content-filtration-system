@@ -2,7 +2,6 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return ''
-
+@app.route('/v1/predict', methods = ['POST'])
+def passFunc():
+    pass  
