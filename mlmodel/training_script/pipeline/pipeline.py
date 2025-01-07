@@ -7,5 +7,4 @@ class Pipeline:
         X = None
         y = None
         for object in self.handlers:
-            print("handlers")
             X, y = object.fit(X, y).transform()
