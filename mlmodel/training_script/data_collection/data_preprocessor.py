@@ -6,20 +6,28 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import nltk
+import re
 nltk.download('punkt_tab')
 nltk.download('stopwords')
 nltk.download('wordnet')
 
 class DataPreProcessor:
     #self.data will act as the central buffer
-    def getColoumn(self, column) -> None:
-        listData = pd.read_csv(self.fileName, names=["category", "filename", "title", "content" ], delimiter="\t")
-        columns = [column]+["category"]
-        self.labeledData = listData[columns]
-        self.data = listData[[column]].values
+    def getColoumn(self, columnBBC, columnALJAZ) -> None:
+        numOfALJAZData = 500
+        fileName = Configurations().INPUT_FILELOCATION_BBC 
+        listDataBBC = pd.read_csv(fileName, names=["category", "filename", "title", "content" ], delimiter="\t")
+        fileName = Configurations().INPUT_FILELOCATION_ALJAZ
+        listDataALJAZ = pd.read_csv(fileName,  delimiter=",", encoding='utf-8')[:500]
+        listDataALJAZ[columnALJAZ] = listDataALJAZ[columnALJAZ].apply(
+            lambda x: re.sub(r'[\u00AD\u00A0\u200B]', '', str(x))
+        )
+        new_data = pd.DataFrame({"category": ["gazawar"] * 500})
+        self.labeledData = pd.concat([listDataBBC, new_data], ignore_index=True)
+        self.data = pd.concat([listDataBBC[columnBBC], listDataALJAZ[columnALJAZ]], ignore_index=True)
 
     def lowerCase(self) -> None:
-        self.data = [el.lower() for string in self.data for el in string ]   
+        self.data = [string.lower() for string in self.data]   
 
     def tokenizeText(self) -> None:
         self.data = [word_tokenize(text) for text in self.data]
@@ -29,6 +37,8 @@ class DataPreProcessor:
         modifiedList = []
         for string in self.data:
             tempList = [el for el in string if not  el in stopWordsSet]
+            if len(tempList) == 0:
+                continue
             modifiedList = modifiedList + [tempList]
         self.data = modifiedList
 
@@ -50,27 +60,27 @@ class DataPreProcessor:
         labels = self.labeledData['category'].values
         modifiedLables = []
         for label in labels:
-            if(label == "business"):
+            if(label == "business" or label == "gazawar"):
                 modifiedLables.append(1)
             else:
                 modifiedLables.append(0)
         
         return modifiedLables
 
-    def process(self, columnName) -> None:
-        self.getColoumn(columnName) #process only title column
+    def process(self, columnNameBBC, columnNameALJAZ) -> None:
+        self.getColoumn(columnNameBBC, columnNameALJAZ)
         self.lowerCase()
         self.tokenizeText()
         self.removeStopW()
         self.lemmatize()
         self.joinWords()
+        print(self.data)
 
     def fit(self, X = None, y = None):
-        self.fileName = Configurations().INPUT_FILELOCATION  
         return self
     
     def transform(self, X = None):
-        self.process("title") 
+        self.process("title", "headline") 
         labels = self.fixLabel()
         self.fixLabel()
         return self.data,labels 

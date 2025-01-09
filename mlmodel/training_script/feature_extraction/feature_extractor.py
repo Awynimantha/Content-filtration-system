@@ -7,7 +7,7 @@ from configuration.config import Configurations
 class FeatureExtractor:
 
     def doTFIDF(self, stringList):
-        vectorizer = TfidfVectorizer() 
+        vectorizer = TfidfVectorizer(stop_words=None) 
         returnval = vectorizer.fit_transform(stringList)
         with open(Configurations().TFIDF_MATRIX_OUTPUT, 'wb') as tfidf_file:
             pickle.dump(vectorizer, tfidf_file)
