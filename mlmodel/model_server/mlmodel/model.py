@@ -1,5 +1,10 @@
 import pickle as pickle
 from configurations.configuration import Configurations
+import pickle as pickle 
+from sklearn.feature_extraction.text import TfidfVectorizer  
+from sklearn.svm import SVC  
+from configurations.configuration import Configurations  
+
 
 class ModelServer:
     def predict(self, string:str):
