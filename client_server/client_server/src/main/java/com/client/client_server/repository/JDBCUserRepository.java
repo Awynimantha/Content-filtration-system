@@ -36,11 +36,12 @@ public class JDBCUserRepository implements UserRepository {
     }
 
     public User saveUser(User user) {
-        jdbcTemplate.query("insert into user (username, password, email) values(?, ? ,?)",
-            user.userName(),
+        jdbcTemplate.update("insert into user (username, password, email) values(?, ? ,?)",
+            user.getUserName(),
             user.getPassword(),
             user.getEmail()
         );
+        return user;
     }
 
     public void deleteUser(String id) {
