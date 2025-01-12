@@ -1,12 +1,34 @@
 package com.client.client_server.controller;
+import java.util.Optional;
+
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.client.client_server.model.User;
+import com.client.client_server.repository.JDBCUserRepository;
+
 @RestController
-@RequestMapping(path = "/v1/user", produces = "application/json")
+@RequestMapping(path = "${url.user}",produces = "application/json")
 //fix
 @CrossOrigin
 public class UserController{
-     
+  public JDBCUserRepository userRepository; 
+
+  public UserController(JDBCUserRepository userRepository) {
+    this.userRepository = userRepository; 
+  }
+  
+  @GetMapping
+  public Iterable<User> getUsers() {
+    return userRepository.getUsers(); 
+  }   
+  
+  @GetMapping("{/id}")
+  public Optional<User> getUserById(@PathVariable("id") Long id) {
+    return userRepository.getUserById(id);
+  }
+   
 }

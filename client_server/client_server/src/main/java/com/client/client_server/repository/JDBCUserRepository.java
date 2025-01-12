@@ -22,7 +22,7 @@ public class JDBCUserRepository implements UserRepository {
         ); 
     }
 
-    public Optional<User> getUserById(String id) {
+    public Optional<User> getUserById(Long id) {
         List<User> userList = jdbcTemplate.query(
           "select username, email from user where id=?",
           this::mapToSecureUser,
@@ -45,7 +45,7 @@ public class JDBCUserRepository implements UserRepository {
     }
 
     public void deleteUser(String id) {
-
+        jdbcTemplate.update("delete * from user where id=?", id);
     }
     
     public User mapToWholeUser(ResultSet resultSet, int rowNum) throws SQLException{
@@ -62,4 +62,4 @@ public class JDBCUserRepository implements UserRepository {
             resultSet.getString("email")
           );
     }
-}
+} 

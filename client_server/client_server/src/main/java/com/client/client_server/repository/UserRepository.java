@@ -5,7 +5,7 @@ import com.client.client_server.model.User;
 
 public interface UserRepository {
     public Iterable<User> getUsers();
-    public Optional<User> getUserById(String id);
+    public Optional<User> getUserById(Long id);
     public User saveUser(User user);
     public void deleteUser(String id);
     
