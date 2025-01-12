@@ -20,7 +20,7 @@ public class ScraperController{
 
     @PostMapping
     public void getScrapedData() {
-      //get the data and send it back to user
+
     }
 
 }
