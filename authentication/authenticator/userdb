@@ -1,0 +1,16 @@
+\i user-schema.sql 
+\i user-schema.sql 
+show tables;
+\s
+\t
+\t
+\l
+\dt
+\d client
+l
+\l
+\d user
+\dt user
+use userdb;
+use userdb;
+\s userdb
