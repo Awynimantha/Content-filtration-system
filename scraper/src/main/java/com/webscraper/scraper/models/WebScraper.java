@@ -1,6 +1,8 @@
 package com.webscraper.scraper.models;
 
 import java.io.IOException;
+import java.util.HashMap;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +31,7 @@ public class WebScraper {
     }
 
     public Document scrape() throws IOException{
-        if(this.cache.isCacheExpired()) {
+        if(!this.cache.isCacheExpired()) {
             System.out.println("scraping......");
             this.document = Jsoup.connect(url).timeout(5000).get();
             cache.updateCache(this.document.html());
@@ -41,9 +43,9 @@ public class WebScraper {
         return content;
     }   
 
-    public String getArticleHeadings() throws IOException{
+    public HashMap<String, String> getArticleHeadings() throws IOException{
         scrape();
-        String result = this.htmlScraper.scrape(this.document).toString();
+        HashMap<String, String> result = this.htmlScraper.scrape(this.document);
         return result;
     }   
    

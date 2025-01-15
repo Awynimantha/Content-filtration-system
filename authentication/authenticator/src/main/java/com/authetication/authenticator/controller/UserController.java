@@ -31,12 +31,6 @@ public class UserController{
   @GetMapping("/{id}")
   public Optional<User> getUserById(@PathVariable("id") Long id) {
     return userRepository.getUserById(id);
-  }
-
-  @PostMapping()
-  public User saveUser(@RequestBody User user) {
-    userRepository.saveUser(user);
-    return user;
-  }
+  } 
    
 }

@@ -1,6 +1,7 @@
 package com.webscraper.scraper.models;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.jsoup.nodes.Document;
@@ -26,13 +27,13 @@ public class HTMLScraper {
     public String mainContent;
     @Value("${scraper.url}")
     public String baseUrl;
-    public List<NewsContent> newsContents; 
+    public HashMap<String, String> newsContents; 
 
     public HTMLScraper() {
-        newsContents = new ArrayList<NewsContent>();
+        newsContents = new HashMap<>();
     }
 
-    public List<NewsContent> scrape(Document document) {
+    public HashMap<String, String> scrape(Document document) {
         Elements mainContentEl = document.select(this.mainContent);
         Elements elements = mainContentEl.select(this.newsContainer);
         List<Elements> cards = new ArrayList<>();
@@ -52,10 +53,7 @@ public class HTMLScraper {
             for(Element card: innerCards) {
                 Elements contents = card.select(this.cardContentDiv);
                 for(Element content: contents) {
-                    NewsContent newsContent = new NewsContent();
-                    newsContent.setStrContent(content.text());
-                    newsContent.setUrl(url);
-                    newsContents.add(newsContent);
+                    newsContents.put(content.text(), url);
                 }
             }
         }

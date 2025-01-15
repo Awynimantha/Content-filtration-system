@@ -23,6 +23,13 @@ public class NewsContent {
         return "Content: "+this.strContent+", link: "+this.url;
     }
 
+    public void setStrContent(String strContent) {
+      this.strContent = strContent;
+    }
+    
+    public void setUrl(String url) {
+      this.url = url;
+    }
     
     
 }

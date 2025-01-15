@@ -5,15 +5,21 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 import com.authetication.authenticator.model.User;
+import com.authetication.authenticator.utils.PasswordUtil;
+
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public class JDBCUserRepository implements UserRepository {
 
     public JdbcTemplate jdbcTemplate;   
-    public JDBCUserRepository(JdbcTemplate jdbcTemplate) {
+    public PasswordUtil passwordUtil;
+
+    public JDBCUserRepository(JdbcTemplate jdbcTemplate, PasswordUtil passwordUtil) {
         this.jdbcTemplate = jdbcTemplate;
+        this.passwordUtil = passwordUtil;
     }
 
     public Iterable<User> getUsers() {
@@ -36,9 +42,10 @@ public class JDBCUserRepository implements UserRepository {
     }
 
     public User saveUser(User user) {
+        String encodedPassword = this.passwordUtil.encode(user.getPassword());
         jdbcTemplate.update("insert into client(username, password, email) values(?, ? ,?)",
             user.getUsername(),
-            user.getPassword(),
+            encodedPassword,
             user.getEmail()
         );
         return user;
