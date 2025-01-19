@@ -11,7 +11,7 @@ public class ClassifierService {
     this.classifierClient = client;
   }
 
-  public String filter() {
-    return this.classifierClient.filterData();
+  public String filter(String payload) {
+    return this.classifierClient.filterData(payload);
   }
 }

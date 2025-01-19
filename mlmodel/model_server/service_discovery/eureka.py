@@ -8,6 +8,7 @@ class Client:
         self.client = eureka_client; 
         eureka_client.init(eureka_server="http://localhost:9082/eureka/",
                                             app_name="mlservice",
+                                            instance_ip="127.0.0.1", 
                                             instance_port=Configurations().PORT)
                 
     

@@ -13,6 +13,7 @@ public class MainController {
   
   private ClientService clientService;
   private ClassifierService classifierService;
+  private String fetchedData;
 
   public MainController(ClientService clientService, ClassifierService classifierService) {
     this.clientService = clientService; 
@@ -22,11 +23,12 @@ public class MainController {
   @GetMapping  
   public String getClient() {
     String value = clientService.getNews(); 
+    this.fetchedData = value;
     return value;
   }
-  @GetMapping  
+  @GetMapping("/filter")  
   public String getClassfier() {
-    String value = classifierService.filter();
+    String value = classifierService.filter(this.fetchedData);
     return value;
   }
 }
